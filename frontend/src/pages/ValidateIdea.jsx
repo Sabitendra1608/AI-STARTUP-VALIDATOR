@@ -45,7 +45,7 @@ const ValidateIdea = () => {
 
     try {
       setLoading(true);
-      const res = await api.post("/ideas", formData);
+      const res = await api.post("/api/ideas", formData);
       toast.success("Startup report generated");
       navigate(`/report/${res.data.report._id}`);
     } catch (error) {
