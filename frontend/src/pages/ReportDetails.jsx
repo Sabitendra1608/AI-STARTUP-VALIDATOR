@@ -20,7 +20,7 @@ const ReportDetails = () => {
 
   const fetchReport = async () => {
     try {
-      const res = await api.get(`/reports/${id}`);
+      const res = await api.get(`/api/reports/${id}`);
       setReport(res.data);
     } catch {
       toast.error("Failed to load report");
