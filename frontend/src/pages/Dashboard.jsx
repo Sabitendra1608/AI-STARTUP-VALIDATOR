@@ -10,7 +10,7 @@ const Dashboard = () => {
 
   const fetchReports = async () => {
     try {
-      const res = await api.get("/reports");
+      const res = await api.get("/api/reports");
       setReports(res.data);
     } catch (error) {
       toast.error("Failed to load reports");
